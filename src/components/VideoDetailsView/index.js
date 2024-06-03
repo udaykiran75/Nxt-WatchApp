@@ -49,7 +49,7 @@ class VideoDetailsView extends Component {
   }
 
   render() {
-    return <div />
+    return <div></div>
   }
 }
 export default VideoDetailsView
