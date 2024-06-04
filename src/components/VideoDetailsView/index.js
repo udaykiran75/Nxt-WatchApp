@@ -1,7 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
-import {Redirect} from 'react-router-dom'
 
 import Header from '../Header'
 import SideBar from '../SideBar'
@@ -141,11 +140,7 @@ class VideoDetailsView extends Component {
     return (
       <ThemeContext.Consumer>
         {value => {
-          const {isDarkMode, activeTab} = value
-
-          if (activeTab === 'Home') {
-            return <Redirect to="/" />
-          }
+          const {isDarkMode} = value
 
           return (
             <VideoDetailMainContainer>
