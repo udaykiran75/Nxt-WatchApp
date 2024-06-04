@@ -21,7 +21,7 @@ export const ThumbnailImg = styled.img`
   border-bottom-left-radius: 3px;
   @media screen and (min-width: 768px) {
     width: 400px;
-    height: 100%;
+    height: 220px;
   }
 `
 export const TrendingProfileImage = styled.img`

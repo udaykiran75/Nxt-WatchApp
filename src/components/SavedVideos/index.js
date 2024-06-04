@@ -1,7 +1,9 @@
 import {Redirect} from 'react-router-dom'
+import {CgPlayListAdd} from 'react-icons/cg'
 
 import Header from '../Header'
 import Sidebar from '../SideBar'
+import TrendingVideoCard from '../TrendingVideoCard'
 
 import ThemeContext from '../../context/ThemeContext'
 
@@ -13,6 +15,11 @@ import {
   NoSavedHeading,
   NoSavedText,
   SavedVideosContainer,
+  SavedHeaderDiv,
+  SavedImgCon,
+  SavedHeading,
+  SavedVideosDiv,
+  DestopOverflowContainer,
 } from './styledComponents'
 
 const SavedVideos = () => (
@@ -34,7 +41,26 @@ const SavedVideos = () => (
             <SavedVideosContainer
               data-testid="savedVideos"
               displayMode={isDarkMode}
-            />
+            >
+              <SavedHeaderDiv displayMode={isDarkMode}>
+                <SavedImgCon displayMode={isDarkMode}>
+                  <CgPlayListAdd color="#ff0b37" size={30} />
+                </SavedImgCon>
+                <SavedHeading displayMode={isDarkMode}>
+                  Saved Videos
+                </SavedHeading>
+              </SavedHeaderDiv>
+              <DestopOverflowContainer>
+                <SavedVideosDiv>
+                  {savedVideos.map(eachVideo => (
+                    <TrendingVideoCard
+                      videoDetails={eachVideo}
+                      key={eachVideo.id}
+                    />
+                  ))}
+                </SavedVideosDiv>
+              </DestopOverflowContainer>
+            </SavedVideosContainer>
           </SavedHomeBodyContainer>
         </SavedVideosHomeBgContainer>
       ) : (

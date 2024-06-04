@@ -22,8 +22,9 @@ const TrendingVideoCard = props => {
     viewCount,
     publishedAt,
     channel,
+    name,
+    profileImageUrl,
   } = videoDetails
-  const {name, profileImageUrl} = channel
 
   return (
     <ThemeContext.Consumer>

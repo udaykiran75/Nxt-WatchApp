@@ -53,10 +53,8 @@ class TrendingRoute extends Component {
         id: eachVideo.id,
         title: eachVideo.title,
         thumbnailUrl: eachVideo.thumbnail_url,
-        channel: {
-          name: eachVideo.channel.name,
-          profileImageUrl: eachVideo.channel.profile_image_url,
-        },
+        name: eachVideo.channel.name,
+        profileImageUrl: eachVideo.channel.profile_image_url,
         viewCount: eachVideo.view_count,
         publishedAt: eachVideo.published_at,
       }))

@@ -24,6 +24,18 @@ class App extends Component {
     this.setState({activeTab: tabId})
   }
 
+  addVideo = video => {
+    const {savedVideos} = this.state
+    const index = savedVideos.findIndex(eachVideo => eachVideo.id === video.id)
+
+    if (index === -1) {
+      this.setState({savedVideos: [...savedVideos, video]})
+    } else {
+      savedVideos.splice(index, 1)
+      this.setState({savedVideos})
+    }
+  }
+
   render() {
     const {isDarkMode, activeTab, savedVideos} = this.state
     return (
@@ -34,6 +46,7 @@ class App extends Component {
           savedVideos,
           toggleTheme: this.toggleTheme,
           changeActiveTab: this.changeActiveTab,
+          addVideo: this.addVideo,
         }}
       >
         <Switch>
