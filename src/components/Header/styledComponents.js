@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   @media screen and (min-width: 768px) {
     height: 7vh;
   }
-  background-color: ${props => (props.displayMode ? '#383838' : '#f9f9f9')};
+  background-color: ${props => (props.displayMode ? '#383838' : '#f1f5f9')};
 `
 export const HeaderLogo = styled.img`
   width: 90px;

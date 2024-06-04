@@ -31,7 +31,7 @@ const TrendingVideoCard = props => {
         const {isDarkMode} = value
         const textColor = isDarkMode ? '#f9f9f9' : '#231f20'
         return (
-          <NavLink to={`/videos/:${id}`}>
+          <NavLink to={`/videos/${id}`}>
             <VideoItemCard>
               <ThumbnailImg src={thumbnailUrl} alt="video thumbnail" />
               <VideoContentDiv displayMode={isDarkMode}>

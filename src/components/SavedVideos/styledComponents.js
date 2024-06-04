@@ -21,7 +21,7 @@ export const NoSavedVideosContainer = styled.div`
   @media screen and (min-width: 768px) {
     width: 75vw;
   }
-  background-color: ${props => (props.displayMode ? '#000000' : '#f1f5f9')};
+  background-color: ${props => (props.displayMode ? '#0f0f0f' : '#f9f9f9')};
 `
 export const NoSavedVideosImage = styled.img`
   margin-top: 0px;

@@ -18,7 +18,7 @@ const GamingVideoCard = props => {
         const textColor = isDarkMode ? '#f9f9f9' : '#231f20'
 
         return (
-          <NavLink to={`/videos/:${id}`}>
+          <NavLink to={`/videos/${id}`}>
             <GameVideoListCard>
               <GameVideoImage src={thumbnailUrl} alt="video thumbnail" />
               <GameTitle displayMode={isDarkMode}>{title}</GameTitle>

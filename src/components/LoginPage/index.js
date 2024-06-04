@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
+import {Redirect} from 'react-router-dom'
 import ThemeContext from '../../context/ThemeContext'
 
 import {
@@ -66,6 +67,12 @@ class LoginPage extends Component {
   render() {
     const {username, password, isChecked, showErrorMsg, errorMsg} = this.state
     const inputType = isChecked ? 'text' : 'password'
+
+    const token = Cookies.get('jwt_token')
+    if (token !== undefined) {
+      return <Redirect to="/" />
+    }
+
     return (
       <ThemeContext.Consumer>
         {value => {

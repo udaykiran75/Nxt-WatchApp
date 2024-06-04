@@ -7,7 +7,7 @@ export const NavLink = styled(Link)`
 
 export const GameVideoListCard = styled.li`
   list-style-type: none;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 `
 export const GameVideoImage = styled.img`
   width: 120px;
@@ -18,6 +18,7 @@ export const GameVideoImage = styled.img`
 export const GameTitle = styled.h1`
   font-family: Roboto;
   font-size: 14px;
+  margin: 0px;
   @media screen and (min-width: 768px) {
     font-size: 17px;
   }
@@ -27,6 +28,7 @@ export const TotalViews = styled.p`
   font-family: Roboto;
   font-size: 11px;
   color: #606060;
+  line-height: 0.5;
   @media screen and (min-width: 768px) {
     font-size: 15px;
   }
