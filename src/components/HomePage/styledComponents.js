@@ -14,8 +14,8 @@ export const BannerContainer = styled.div`
   width: 100%;
   background-size: cover;
   height: 160px;
-  display: ${props => props.display};
   justify-content: space-between;
+  display: flex;
   padding: 15px;
   @media screen and (min-width: 768px) {
     height: 200px;

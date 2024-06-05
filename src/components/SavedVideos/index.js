@@ -63,7 +63,10 @@ const SavedVideos = () => (
           <Header />
           <SavedHomeBodyContainer>
             <Sidebar />
-            <NoSavedVideosContainer displayMode={isDarkMode}>
+            <NoSavedVideosContainer
+              displayMode={isDarkMode}
+              data-testid="savedVideos"
+            >
               <NoSavedVideosImage
                 src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png"
                 alt="no saved videos"
