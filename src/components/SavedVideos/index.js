@@ -1,4 +1,3 @@
-import {Redirect} from 'react-router-dom'
 import {CgPlayListAdd} from 'react-icons/cg'
 
 import Header from '../Header'
@@ -25,11 +24,7 @@ import {
 const SavedVideos = () => (
   <ThemeContext.Consumer>
     {value => {
-      const {savedVideos, isDarkMode, activeTab} = value
-
-      if (activeTab === 'Home') {
-        return <Redirect to="/" />
-      }
+      const {savedVideos, isDarkMode} = value
 
       const videosLength = savedVideos.length
 

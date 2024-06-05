@@ -1,4 +1,13 @@
 import styled from 'styled-components'
+import ReactPlayer from 'react-player'
+
+export const StyledReactPlayer = styled(ReactPlayer)`
+  height: 270px;
+
+  @media (min-width: 768px) {
+    height: 480px !important;
+  }
+`
 
 export const VideoPlayerContainer = styled.div`
   padding: 10px;

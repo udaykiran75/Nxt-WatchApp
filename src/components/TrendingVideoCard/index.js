@@ -21,7 +21,6 @@ const TrendingVideoCard = props => {
     thumbnailUrl,
     viewCount,
     publishedAt,
-    channel,
     name,
     profileImageUrl,
   } = videoDetails

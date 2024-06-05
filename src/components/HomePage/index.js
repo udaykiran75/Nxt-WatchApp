@@ -150,10 +150,11 @@ class HomePage extends Component {
                       <BannerText>
                         Buy Nxt Watch Premium prepaid plans with <br /> UPI
                       </BannerText>
-                      <BannerButton type="button">GET IT NOW</BannerButton>
+                      <BannerButton>GET IT NOW</BannerButton>
                     </BannerLeftPart>
                     <BannerRightPart>
                       <BannerCloseButton
+                        type="button"
                         data-testid="close"
                         onClick={this.onCloseBanner}
                       >

@@ -1,4 +1,3 @@
-import ReactPlayer from 'react-player'
 import {AiOutlineLike, AiOutlineDislike} from 'react-icons/ai'
 import {BiListPlus} from 'react-icons/bi'
 
@@ -20,6 +19,7 @@ import {
   ChannelName,
   ChannelSubscribers,
   ChannelDescription,
+  StyledReactPlayer,
 } from './styledComponents'
 
 const VideoPlayCard = props => {
@@ -28,7 +28,6 @@ const VideoPlayCard = props => {
     id,
     title,
     videoUrl,
-    thumbnailUrl,
     name,
     profileImageUrl,
     subscriberCount,
@@ -68,7 +67,7 @@ const VideoPlayCard = props => {
 
         return (
           <VideoPlayerContainer>
-            <ReactPlayer url={videoUrl} controls width="100%" height="270px" />
+            <StyledReactPlayer url={videoUrl} controls width="100%" />
             <VideoTitle displayMode={isDarkMode}>{title}</VideoTitle>
             <VideoOptionsContainer>
               <ViewsAndYearDiv>

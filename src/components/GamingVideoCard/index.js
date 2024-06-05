@@ -15,7 +15,6 @@ const GamingVideoCard = props => {
     <ThemeContext.Consumer>
       {value => {
         const {isDarkMode} = value
-        const textColor = isDarkMode ? '#f9f9f9' : '#231f20'
 
         return (
           <NavLink to={`/videos/${id}`}>

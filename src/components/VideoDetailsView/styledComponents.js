@@ -16,6 +16,8 @@ export const VideoDetailContainer = styled.div`
   min-height: 91vh;
   @media screen and (min-width: 768px) {
     width: 75vw;
+    height: 93vh;
+    overflow-y: auto;
   }
   background-color: ${props => (props.displayMode ? '#0f0f0f' : '#f9f9f9')};
 `

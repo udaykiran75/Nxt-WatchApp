@@ -83,7 +83,7 @@ class LoginPage extends Component {
           return (
             <LoginbgContainer displayMode={isDarkMode}>
               <LoginCardDiv displayMode={isDarkMode}>
-                <LogoImage src={logoImage} />
+                <LogoImage src={logoImage} alt="website logo" />
                 <FormElement onSubmit={this.onClickLoginButton}>
                   <InputContainer>
                     <Label htmlFor="username" displayMode={isDarkMode}>

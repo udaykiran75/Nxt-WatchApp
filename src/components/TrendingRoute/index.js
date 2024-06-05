@@ -1,6 +1,5 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import {Redirect} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import {HiFire} from 'react-icons/hi'
 import ThemeContext from '../../context/ThemeContext'
@@ -107,11 +106,7 @@ class TrendingRoute extends Component {
     return (
       <ThemeContext.Consumer>
         {value => {
-          const {isDarkMode, activeTab} = value
-
-          if (activeTab === 'Home') {
-            return <Redirect to="/" />
-          }
+          const {isDarkMode} = value
 
           return (
             <TrendingMainContainer>

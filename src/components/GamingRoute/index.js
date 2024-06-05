@@ -1,5 +1,4 @@
 import {Component} from 'react'
-import {Redirect} from 'react-router-dom'
 import {SiYoutubegaming} from 'react-icons/si'
 import Cookies from 'js-cookie'
 
@@ -108,11 +107,7 @@ class GamingRoute extends Component {
     return (
       <ThemeContext.Consumer>
         {value => {
-          const {isDarkMode, activeTab} = value
-
-          if (activeTab === 'Home') {
-            return <Redirect to="/" />
-          }
+          const {isDarkMode} = value
 
           return (
             <GamingMainContainer>

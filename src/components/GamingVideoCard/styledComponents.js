@@ -15,9 +15,10 @@ export const GameVideoImage = styled.img`
     width: 180px;
   }
 `
-export const GameTitle = styled.h1`
+export const GameTitle = styled.p`
   font-family: Roboto;
   font-size: 14px;
+  font-weight: bold;
   margin: 0px;
   @media screen and (min-width: 768px) {
     font-size: 17px;

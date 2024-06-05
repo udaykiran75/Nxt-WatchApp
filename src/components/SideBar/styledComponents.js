@@ -54,9 +54,9 @@ export const ContactContainer = styled.div`
     padding: 10px;
   }
 `
-export const Contact = styled.h1`
+export const Contact = styled.p`
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 17px;
   color: ${props => (props.isDarkMode ? '#ffffff' : '#383838')};
 `
 export const SocialMediaContainer = styled.div`

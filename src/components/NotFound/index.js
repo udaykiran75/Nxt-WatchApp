@@ -15,7 +15,7 @@ import {
 const NotFound = () => (
   <ThemeContext.Consumer>
     {value => {
-      const {isDarkMode, activeTab} = value
+      const {isDarkMode} = value
 
       const imageUrl = isDarkMode
         ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-dark-theme-img.png'
