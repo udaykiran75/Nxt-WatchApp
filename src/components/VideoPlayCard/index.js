@@ -1,5 +1,6 @@
 import {AiOutlineLike, AiOutlineDislike} from 'react-icons/ai'
 import {BiListPlus} from 'react-icons/bi'
+import {formatDistanceToNow} from 'date-fns'
 
 import ThemeContext from '../../context/ThemeContext'
 
@@ -44,6 +45,8 @@ const VideoPlayCard = props => {
     clickDisLiked()
   }
 
+  const formatDate = formatDistanceToNow(new Date(publishedAt))
+
   return (
     <ThemeContext.Consumer>
       {value => {
@@ -72,7 +75,7 @@ const VideoPlayCard = props => {
             <VideoOptionsContainer>
               <ViewsAndYearDiv>
                 <Text displayMode={isDarkMode}>{viewCount} views</Text>
-                <Text displayMode={isDarkMode}>&#8226; {publishedAt}</Text>
+                <Text displayMode={isDarkMode}>&#8226; {formatDate}</Text>
               </ViewsAndYearDiv>
               <IconsContainer>
                 <ReatIconButton type="button" onClick={onClickLike}>

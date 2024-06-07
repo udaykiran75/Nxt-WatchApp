@@ -37,7 +37,6 @@ const Header = props => (
       ) : (
         <BsMoon size={25} />
       )
-
       const moboileMenu = isDarkMode ? (
         <GiHamburgerMenu color="#ffffff" size={25} />
       ) : (
